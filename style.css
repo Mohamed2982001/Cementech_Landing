@@ -481,14 +481,15 @@ footer {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 40px;
+        padding: 40px 24px;
     }
 
     .hero-text > p {
         margin: 0 auto 40px auto;
     }
 
-    .testing-notice {
-        text-align: right;
+    .step-card {
+        text-align: right; /* Keep text readable in Arabic RTL */
     }
 
     .app-card-header {
@@ -498,11 +499,31 @@ footer {
     .store-buttons {
         justify-content: center;
     }
+
+    .hero-image {
+        order: -1; /* Move the image to the top on mobile */
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .step-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 24px;
+        gap: 16px;
+    }
 }
 
 @media (max-width: 576px) {
     .hero-text h1 {
-        font-size: 40px;
+        font-size: 36px;
     }
     
     .store-buttons {
@@ -512,5 +533,14 @@ footer {
     .store-btn {
         width: 100%;
         justify-content: center;
+    }
+
+    .btn-massive-join {
+        font-size: 18px;
+        padding: 14px 24px;
+    }
+
+    .app-card {
+        padding: 20px 16px;
     }
 }
