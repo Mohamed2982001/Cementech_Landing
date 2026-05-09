@@ -362,13 +362,14 @@ header {
 }
 
 .store-btn.ios {
-    background: rgba(255, 255, 255, 0.05);
-    color: var(--text-main);
-    border: 1px solid var(--border-color);
+    background: var(--text-main);
+    color: #0F172A;
 }
 
 .store-btn.ios:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: #E2E8F0;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255,255,255,0.1);
 }
 
 .store-btn.pending {
